@@ -19,3 +19,26 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+/** Button */
+.button-default {
+  @apply font-extralight text-yellow-1 text-4xl leading-[48px] bg-white/20 hover:shadow-default-button p-6;
+}
+.button-primary {
+  @apply relative text-black-1 text-[28px] leading-[35px] bg-gradient-to-r from-yellow-3 to-yellow-2 hover:from-yellow-4 hover:to-yellow-4 hover:text-white hover:border-yellow-4 shadow-primary-button px-9 py-[23px];
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 0.5px #ccc inset;
+    pointer-events: none;
+  }
+}
