@@ -8,7 +8,7 @@ interface CarouselProps {
   direction?: 'horizontal' | 'vertical'
   autoplay?: boolean
   className?: string
-  speed?: number // 0.1 - 2.0
+  speed?: number
 }
 
 export default function Carousel({
@@ -25,7 +25,7 @@ export default function Carousel({
   const childrenRef = useRef<HTMLDivElement>(null)
   const transitionRef = useRef(true)
 
-  // 复制三份内容，确保滚动过程中始终有内容显示
+  // duplicate two times of content to ensure content is always displayed during scrolling
   const items = [...children, ...children]
 
   useEffect(() => {
@@ -45,14 +45,14 @@ export default function Carousel({
           maxTranslate = (childrenHeight - contentHeight) / contentHeight
         }
 
-        // 当滚动到第一组快结束时，准备无缝切换
+        // prepare for seamless switch
         if (newPos <= (maxTranslate * 100)) {
-          // 暂时关闭过渡效果
+          // temporarily disable transition effect
           transitionRef.current = false
-          // 计算精确的重置位置，保持视觉连续性
+          // calculate precise reset position to maintain visual continuity
           const resetPos = 0
 
-          // 使用 requestAnimationFrame 确保在下一帧恢复过渡效果
+          // use requestAnimationFrame to ensure the transition effect is restored in the next frame
           requestAnimationFrame(() => {
             transitionRef.current = true
           })

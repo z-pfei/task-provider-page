@@ -1,9 +1,13 @@
+'use client'
+
+import { useState } from 'react'
 import Button from '@/components/Button'
 import Image from 'next/image'
 import DoctorCard from '@/components/DoctorCard'
 import Carousel from '@/components/Carousel'
 import Link from 'next/link'
 import AttentionCarousel from '@/components/Home/AttentionCarousel'
+import SampleReportForm from '@/components/Home/SampleReportForm'
 
 const doctors = [
   {
@@ -36,6 +40,8 @@ const papers = [
 ]
 
 export default function Home() {
+  const [isSampleReportOpen, setIsSampleReportOpen] = useState(false)
+
   return (
     <>
       <header className="text-yellow-1 bg-[url('/image/header.png')] bg-cover bg-center bg-no-repeat p-12">
@@ -146,7 +152,11 @@ export default function Home() {
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
-              <Button className='mt-12' variant='primary'>
+              <Button
+                className='mt-12'
+                variant='primary'
+                onClick={() => setIsSampleReportOpen(true)}
+              >
                 Read more in our white paper
               </Button>
             </div>
@@ -201,7 +211,11 @@ export default function Home() {
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
               </p>
-              <Button className='mt-12' variant='primary'>
+              <Button
+                className='mt-12'
+                variant='primary'
+                onClick={() => setIsSampleReportOpen(true)}
+              >
                 View sample report
               </Button>
             </div>
@@ -218,6 +232,11 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <SampleReportForm
+        isOpen={isSampleReportOpen}
+        onClose={() => setIsSampleReportOpen(false)}
+      />
     </>
   )
 }

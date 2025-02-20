@@ -5,11 +5,13 @@ interface ButtonProps {
   variant?: 'primary' | 'default';
   className?: string;
   onClick?: () => void;
+  type?: 'button' | 'submit' | 'reset';
 }
 
-export default function Button({ children, variant = 'default', className = '', onClick }: ButtonProps) {
+export default function Button({ children, variant = 'default', className = '', onClick, type = 'button' }: ButtonProps) {
   return (
     <button 
+      type={type}
       className={classnames(
         'flex items-center font-manrope rounded-full transition duration-300',
         className,
