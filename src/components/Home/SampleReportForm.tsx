@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Modal from '@/components/Modal'
 import Button from '@/components/Button'
+import Image from 'next/image'
 
 interface SampleReportFormProps {
   isOpen: boolean
@@ -46,9 +47,11 @@ export default function SampleReportForm({
           </div>
           <div className='relative mt-4 mb-9'>
             <div className='absolute left-6 top-1/2 -translate-y-1/2 flex items-center gap-2'>
-              <img
+              <Image
                 src='/svg/us-flag.svg'
                 alt='US flag'
+                width={24}
+                height={24}
                 className='w-6 h-6 object-cover'
               />
               <span className='text-dark-1'>+1</span>
