@@ -18,14 +18,20 @@ export default {
           4: "#66430D",
           5: "#FBF6ED",
         },
-        black: {
+        dark: {
           1: "#170D00",
+        },
+        origin: {
+          1: "#DE6430",
         },
       },
       boxShadow: {
         'default-button': '0px 2.1px 27.3px 0px rgba(251, 246, 237, 1)',
         'primary-button': '0px 2px 26px 0px rgba(255, 235, 204, 1)',
       },
+      backgroundImage: {
+        'primary-gradient': 'linear-gradient(to bottom, #FFFFFF, #DDD7CF, #32200B)',
+      }
     },
   },
   plugins: [],

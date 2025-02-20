@@ -29,7 +29,7 @@ body {
   @apply font-extralight text-yellow-1 text-4xl leading-[48px] bg-white/20 hover:shadow-default-button p-6;
 }
 .button-primary {
-  @apply relative text-black-1 text-[28px] leading-[35px] bg-gradient-to-r from-yellow-3 to-yellow-2 hover:from-yellow-4 hover:to-yellow-4 hover:text-white hover:border-yellow-4 shadow-primary-button px-9 py-[23px];
+  @apply relative text-dark-1 text-[28px] leading-[35px] bg-gradient-to-r from-yellow-3 to-yellow-2 hover:from-yellow-4 hover:to-yellow-4 hover:text-white hover:border-yellow-4 shadow-primary-button px-9 py-[23px];
 
   ::after {
     content: "";
@@ -41,4 +41,36 @@ body {
     box-shadow: 0 0 0 0.5px #ccc inset;
     pointer-events: none;
   }
+}
+
+/** Container width step */
+.container-width-step::before {
+  content: "1";
+  @apply absolute w-[9rem] top-0 bottom-[5rem] left-[-3.75rem] border border-dark-1 rounded-full text-dark-1 text-8xl font-light leading-[7.25rem] text-right pt-[7.5rem] pr-6;
+}
+.step-1::before {
+  content: "1";
+}
+.step-2::before {
+  content: "2";
+}
+
+/** Attention card */
+.attention-card-l::before,
+.attention-card-m::before,
+.attention-card-s::before {
+  content: "";
+  @apply absolute top-0 bottom-0 rounded-full bg-[#F7F7F4];
+}
+
+.attention-card-l::before {
+  @apply w-[40rem] left-[-7.5rem];
+}
+
+.attention-card-m::before {
+  @apply w-[26.26rem] left-0;
+}
+
+.attention-card-s::before {
+  @apply w-[23.73rem] left-[1.25rem];
 }

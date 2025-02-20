@@ -67,7 +67,7 @@ export default function Carousel({
     <div 
       ref={containerRef}
       className={classnames(
-        'relative overflow-hidden',
+        'relative overflow-hidden clip-path',
         className
       )}
       onMouseEnter={() => setIsPaused(true)}
