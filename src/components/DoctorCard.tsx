@@ -25,17 +25,17 @@ export default function DoctorCard({ name, title, description, imageSrc, classNa
       />
 
       {/* name */}
-      <h3 className="text-[1.5rem] leading-9 text-yellow-2 font-bold mb-2">
+      <h3 className="text-[1.5rem] font-crimson leading-9 text-yellow-2 font-bold mb-2">
         {name}
       </h3>
 
       {/* title */}
-      <p className="text-[1.125rem] leading-[1.375rem] text-yellow-2 mb-4">
+      <p className="text-[1.125rem] font-crimson leading-[1.375rem] text-yellow-2 mb-4">
         {title}
       </p>
 
       {/* description */}
-      <p className="text-yellow-5 text-base">
+      <p className="text-yellow-5 text-base font-manrope">
         {description}
       </p>
     </div>

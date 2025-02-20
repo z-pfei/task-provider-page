@@ -53,10 +53,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.font-manrope {
-  font-family: var(--font-manrope);
-}
-
 /** Button */
 .button-default {
   @apply font-extralight text-yellow-1 text-4xl leading-[48px] bg-white/20 hover:shadow-default-button p-6;
@@ -83,7 +79,7 @@ body {
 }
 .step-1::before {
   content: "1";
-  bottom: 5rem;
+  @apply !bottom-[5rem];
 }
 .step-2::before {
   content: "2";

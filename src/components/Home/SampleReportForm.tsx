@@ -37,7 +37,7 @@ export default function SampleReportForm({
             <input
               type='email'
               placeholder='E-mail Address'
-              className='w-full p-6 border border-[#101010] rounded-full bg-[#F4EFE7] text-[#101010] placeholder:text-gray-500'
+              className='w-full p-6 font-manrope border border-[#101010] rounded-full bg-[#F4EFE7] text-[#101010] placeholder:text-gray-500'
               value={formData.email}
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, email: e.target.value }))
@@ -59,7 +59,7 @@ export default function SampleReportForm({
             <input
               type='tel'
               placeholder='Phone Number (Optional)'
-              className='w-full p-6 pl-[6.5rem] border border-[#101010] rounded-full bg-[#F4EFE7] text-[#101010] placeholder:text-gray-500'
+              className='w-full p-6 pl-[6.5rem] font-manrope border border-[#101010] rounded-full bg-[#F4EFE7] text-[#101010] placeholder:text-gray-500'
               value={formData.phone}
               onChange={(e) =>
                 setFormData((prev) => ({ ...prev, phone: e.target.value }))
@@ -68,11 +68,11 @@ export default function SampleReportForm({
           </div>
           <Button
             type='submit'
-            className='w-full justify-center !bg-modal-button text-white text-2xl !py-4 !leading-[1.875rem]'
+            className='w-full justify-center !bg-modal-button font-merriweather text-white text-2xl !py-4 !leading-[1.875rem]'
           >
             Send me PDFs
           </Button>
-          <p className='text-base text-primary-10 mt-4'>
+          <p className='text-base font-manrope text-primary-10 mt-4'>
             You consent to receive communications from Generation Lab. You can
             unsubscribe anytime.
           </p>

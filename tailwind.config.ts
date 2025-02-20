@@ -37,7 +37,12 @@ export default {
         'primary-gradient': 'linear-gradient(to bottom, #FFFFFF, #DDD7CF, #32200B)',
         'modal-gradient': 'linear-gradient(180deg, rgba(254, 242, 196, 1) -53.77%, rgba(245, 233, 185, 1) -33.57%, rgba(237, 224, 174, 1) -13.37%, rgba(228, 215, 164, 1) 6.82%, rgba(220, 206, 153, 1) 27.02%, rgba(211, 197, 142, 1) 47.22%, rgba(203, 188, 131, 1) 67.42%, rgba(194, 179, 120, 1) 87.61%, rgba(186, 171, 110, 1) 107.81%, rgba(177, 162, 99, 1) 128.01%, rgba(168, 153, 88, 1) 148.21%, rgba(160, 144, 77, 1) 168.41%, rgba(151, 135, 66, 1) 188.6%, rgba(143, 126, 55, 1) 208.8%, rgba(134, 117, 45, 1) 229%, rgba(126, 108, 34, 1) 249.2%, rgba(117, 99, 23, 1) 269.39%)',
         'modal-button': 'linear-gradient(275.52deg, #3F2501 -6.96%, #442903 -6.96%, #B68540 97.29%)'
-      }
+      },
+      fontFamily: {
+        crimson: ['var(--font-crimson)', 'serif'],
+        manrope: ['var(--font-manrope)', 'sans-serif'],
+        merriweather: ['var(--font-merriweather)', 'serif'],
+      },
     },
   },
   plugins: [],

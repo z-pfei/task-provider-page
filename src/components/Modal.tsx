@@ -49,7 +49,7 @@ export default function Modal({
         onClick={onClose}
       />
       {/* modal content */}
-      <div className='fixed inset-0 flex items-center justify-center'>
+      <div className='fixed inset-0 flex items-center justify-center font-merriweather'>
         <div
           className={classnames(
             'relative bg-modal-gradient rounded-[3.125rem] p-20 max-w-[44.5rem] w-full max-h-[92vh] overflow-y-auto',
