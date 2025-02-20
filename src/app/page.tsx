@@ -71,6 +71,7 @@ export default function Home() {
           </Button>
         </section>
       </header>
+      {/* first block */}
       <section className='bg-black p-[7.5rem] pr-0'>
         <div className='flex justify-between mb-12'>
           <div className='text-[4rem] text-yellow-1'>Elevate Your Practice</div>
@@ -92,6 +93,7 @@ export default function Home() {
           ))}
         </Carousel>
       </section>
+      {/* second block */}
       <div className='bg-primary-gradient'>
         <section className='relative container-width-step setp-1 p-[7.5rem]'>
           <div className='text-8xl font-light leading-[7.25rem] mb-20'>
@@ -124,7 +126,7 @@ export default function Home() {
           </div>
           {/* 2-1 */}
           <div className='flex items-center justify-between flex-wrap gap-20 px-[7.5rem]'>
-            <div className='flex-1 text-dark-1'>
+            <div className='flex-1 text-dark-1 min-w-[30rem]'>
               <div className='text-[4rem] font-light leading-[4.875rem]'>
                 Go Beyond Just A Number
               </div>
@@ -176,9 +178,11 @@ export default function Home() {
             </div>
           </div>
           {/* 2-2 */}
-          <div className='flex items-center justify-between pt-[7.5rem] gap-20 pr-[7.5rem]'>
-            <AttentionCarousel />
-            <div className='flex-1 text-dark-1'>
+          <div className='flex items-center justify-between flex-wrap pt-[7.5rem] pr-[7.5rem]'>
+            <div className='flex-1'>
+              <AttentionCarousel />
+            </div>
+            <div className='flex-1 min-w-[30rem] text-dark-1 ml-40'>
               <div className='text-[4rem] font-light leading-[4.875rem]'>
                 Identify Top Aging Factors
               </div>

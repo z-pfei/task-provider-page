@@ -7,6 +7,39 @@
   --foreground: #171717;
 }
 
+/* 移动端基准字体大小 */
+html {
+  font-size: 8px; /* 基准值 */
+}
+
+/* 平板竖屏 */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* 平板横屏 */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* 桌面端 */
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* 大屏幕 */
+@media screen and (min-width: 1440px) {
+  html {
+    font-size: 16px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
