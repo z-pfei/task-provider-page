@@ -79,7 +79,7 @@ export default function Home() {
           </Button>
         </div>
 
-        <Carousel direction='horizontal' autoplay={true}>
+        <Carousel direction='horizontal'>
           {doctors.map((doctor, index) => (
             <DoctorCard
               key={index}
@@ -118,7 +118,7 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className='relative container-width-step step-2 py-[7.5rem]'>
+        <section className='relative container-width-step step-2 pt-[7.5rem]'>
           <div className='text-8xl font-light leading-[7.25rem] mb-20 px-[7.5rem]'>
             MOST ADVANCED ANALYSIS
           </div>
@@ -200,6 +200,16 @@ export default function Home() {
               <Button className='mt-12' variant='primary'>
                 View sample report
               </Button>
+            </div>
+          </div>
+        </section>
+        <section className='relative container-width-step step-3 text-[#F4EFE7] py-[7.5rem]'>
+          <div className='text-8xl font-light leading-[7.25rem] mb-20 px-[7.5rem]'>
+            Intervene with Confidence
+          </div>
+          <div className='px-[7.5rem]'>
+            <div className='text-[4rem] font-light leading-[4.875rem]'>
+              Intelligent Interventions
             </div>
           </div>
         </section>

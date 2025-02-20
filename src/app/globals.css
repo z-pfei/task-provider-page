@@ -46,13 +46,18 @@ body {
 /** Container width step */
 .container-width-step::before {
   content: "1";
-  @apply absolute w-[9rem] top-0 bottom-[5rem] left-[-3.75rem] border border-dark-1 rounded-full text-dark-1 text-8xl font-light leading-[7.25rem] text-right pt-[7.5rem] pr-6;
+  @apply absolute w-[9rem] top-0 bottom-0 left-[-3.75rem] border border-dark-1 rounded-full text-dark-1 text-8xl font-light leading-[7.25rem] text-right pt-[7.5rem] pr-6;
 }
 .step-1::before {
   content: "1";
+  bottom: 5rem;
 }
 .step-2::before {
   content: "2";
+}
+.step-3::before {
+  content: "3";
+  @apply text-[#FBF6ED] border-[#FBF6ED];
 }
 
 /** Attention card */

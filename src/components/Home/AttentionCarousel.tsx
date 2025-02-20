@@ -3,7 +3,7 @@ import AttentionCard from '@/components/Home/AttentionCard'
 
 export default function AttentionCarousel() {
   return (
-    <Carousel direction='vertical' className='h-[80rem] flex-1' speed={0.1}>
+    <Carousel direction='vertical' className='h-[80rem] flex-1' speed={0.05} autoplay={true}>
       <AttentionCard
         className='mb-12'
         title='Cardiac System'
